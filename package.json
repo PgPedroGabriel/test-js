@@ -3,10 +3,21 @@
   "version": "1.0.0",
   "description": "A simple project with a single failing test",
   "scripts": {
-    "test": "mocha test/**/*spec.js"
+    "start": "node src/index.js",
+    "test": "ISTEST=1 mocha test/**/*spec.js"
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.2.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
   }
 }
